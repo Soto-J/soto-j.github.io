@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100%;
+  line-height: 1.6;
+  background: #0f1624;
+  color: rgb(157, 171, 207);
+  background-size: 500%;
+  -webkit-animation: bg-animation 6s infinite alternate;
+          animation: bg-animation 6s infinite alternate;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.nav-bar {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bar__links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.nav-bar__links a {
+  font-weight: 700;
+  background-color: rgb(157, 171, 207);
+  color: rgb(56, 71, 101);
+  border-radius: 3rem;
+  padding: 0.8rem 2rem;
+  transition: 0.3s;
+}
+.nav-bar__social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.main {
+  max-width: 114rem;
+  margin: 5rem auto;
+}
+.main__resume-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgb(157, 171, 207);
+  color: rgb(56, 71, 101);
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  margin-top: 4rem;
+}
+.main__section-projects {
+  margin-top: 10rem;
+}
+.main__section-projects-card {
+  margin: 4rem auto;
+  max-width: 40rem;
+  background-color: rgb(157, 171, 207);
+  color: rgb(56, 71, 101);
+  padding: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+.main__section-projects-card-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+.main__section-projects-card-description {
+  margin-top: 1rem;
+}
+.main__section-projects-card-stack-used {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.main__section-projects-card-stack-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.main__section-projects-card .btn-code,
+.main__section-projects-card .btn-source {
+  background-color: rgb(56, 71, 101);
+  color: rgb(157, 171, 207);
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+}
+.main__section-projects-card-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main__section-technologies {
+  margin-top: 20rem;
+}
+.main__section-technologies-header {
+  font-weight: 700;
+}
+.main__section-technologies-skills {
+  display: flex;
+  gap: 10rem;
+  max-width: 50rem;
+  margin: 2rem auto;
+}
+.main__section-about-me {
+  margin-top: 20rem;
+}
+
+.footer {
+  max-width: 130rem;
+  margin: 10rem auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

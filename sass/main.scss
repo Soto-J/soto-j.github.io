@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import "./base";
+@import "./animation";
+@import "./components/_nav";
+
+.main {
+    max-width: 114rem;
+    margin: 5rem auto;
+
+    &__section-intro {
+    }
+
+    &__header {
+    }
+
+    &__introduction {
+    }
+
+    &__resume-btn {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        background-color: $Color-grey-blue-light;
+        color: $Color-grey-blue-dark;
+        padding: $Padding-btn;
+        border-radius: 3rem;
+        margin-top: 4rem;
+    }
+
+    &__section-projects {
+        margin-top: 10rem;
+
+        &-header {
+        }
+
+        &-card {
+            margin: 4rem auto;
+            max-width: 40rem;
+            background-color: $Color-grey-blue-light;
+            color: $Color-grey-blue-dark;
+            padding: 4rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+
+            &-image {
+            }
+
+            &-header {
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            &-description {
+                margin-top: 1rem;
+            }
+
+            &-stack-used {
+                text-align: center;
+                margin-top: 1rem;
+                font-weight: 700;
+            }
+
+            &-stack-list {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+            .btn-code,
+            .btn-source {
+                background-color: $Color-grey-blue-dark;
+                color: $Color-grey-blue-light;
+                display: inline-block;
+                padding: $Padding-btn;
+                border-radius: 0.8rem;
+                box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+            }
+
+            &-buttons {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__section-technologies {
+        margin-top: 20rem;
+
+        &-header {
+            font-weight: 700;
+        }
+
+        &-description {
+        }
+
+        &-skills {
+            display: flex;
+            gap: 10rem;
+            max-width: 50rem;
+            margin: 2rem auto;
+        }
+    }
+
+    &__section-about-me {
+        margin-top: 20rem;
+    }
+}
+
+.footer {
+    max-width: 130rem;
+    margin: 10rem auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,48 @@
+// COLORS
+$Color-bg-gradient: no-repeat linear-gradient(to right bottom, #0f1624, #3a4051);
+$Color-bg-navy: #0f1624;
+
+$Color-grey-blue-light: rgb(157, 171, 207);
+$Color-grey-blue-dark: rgb(56, 71, 101);
+
+$Color-white: #ffffff;
+
+// FONTS
+$Font-Lato: "Lato", sans-serif;
+
+// PADDING
+$Padding-btn: 0.8rem 2rem;
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: $Font-Lato;
+    font-weight: 400;
+    min-height: 100vh;
+    width: 100%;
+    line-height: 1.6;
+    background: $Color-bg-navy;
+    color: $Color-grey-blue-light;
+    background-size: 500%;
+    animation: bg-animation 6s infinite alternate;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

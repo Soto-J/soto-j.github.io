@@ -1,0 +1,31 @@
+.nav-bar {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__name {
+  }
+  &__links {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+
+      & a {
+          font-weight: 700;
+          background-color: $Color-grey-blue-light;
+          color: $Color-grey-blue-dark;
+          border-radius: 3rem;
+          padding: $Padding-btn;
+          transition: 0.3s;
+
+          &:hover {
+          }
+      }
+  }
+
+  &__social-icons {
+      display: flex;
+      gap: 2rem;
+  }
+}
