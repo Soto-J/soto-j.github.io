@@ -1,31 +1,42 @@
 .nav-bar {
-  padding: 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  &__name {
-  }
-  &__links {
-      list-style: none;
-      display: flex;
-      gap: 3rem;
+    &__name {
+    }
+    &__links {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
 
-      & a {
-          font-weight: 700;
-          background-color: $Color-grey-blue-light;
-          color: $Color-grey-blue-dark;
-          border-radius: 3rem;
-          padding: $Padding-btn;
-          transition: 0.3s;
+        & li {
+            transition: 0.3s;
+        }
 
-          &:hover {
-          }
-      }
-  }
+        & li:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+        }
 
-  &__social-icons {
-      display: flex;
-      gap: 2rem;
-  }
+        & li:active {
+            transform: translate(2px);
+        }
+
+        & a:link,
+        & a:visited {
+            font-weight: 700;
+            background-color: $Color-grey-blue-light;
+            color: $Color-grey-blue-dark;
+            border-radius: 3rem;
+            padding: $Padding-btn;
+            box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__social-icons {
+        display: flex;
+        gap: 2rem;
+    }
 }

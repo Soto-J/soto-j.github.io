@@ -41,12 +41,22 @@
         </nav>
         <main class="main">
             <section class="main__section-intro">
-                <h1 class="main__header">Welcome To My Personal Portfolio!</h1>
-                <p class="main__introduction">
-                    Hello, my name is John Soto and i'm an aspiring Software
-                    Developer looking to take my development skills to the next
-                    level by building amazing applications and websites.
-                </p>
+                <div class="main__introduction-box">
+                    <div class="main__intro">
+                        <h1 class="main__header">
+                            Welcome To My Personal Portfolio!
+                        </h1>
+                        <p class="main__introduction">
+                            Hello, my name is John Soto and i'm an aspiring
+                            Software Developer looking to take my development
+                            skills to the next level by building amazing
+                            applications and websites.
+                        </p>
+                    </div>
+                    <picture class="main__photo">
+                        <img src="./images/john-soto.jpg" alt="John Soto" />
+                    </picture>
+                </div>
                 <a
                     href="./images/Resume-2022.pdf"
                     class="main__resume-btn"
@@ -59,29 +69,31 @@
                 <h2 class="main__section-projects-header">Projects</h2>
                 <div class="main__section-projects-card">
                     <picture class="main__section-projects-card-image">
-                        <img src="" alt="" />
+                        <img src="./images/projects/Expense.PNG" alt="" />
                     </picture>
-                    <h3 class="main__section-projects-card-header">
-                        Expense Tracker
-                    </h3>
-                    <p class="main__section-projects-card-description">
-                        Using React i was able to build a expense tracker. This
-                        was one of my first projects using react where i was
-                        able to work with files dynamically to create an
-                        application. In this project i was able to implement the
-                        unique features i've learned, that the React framework
-                        has to offer.
-                    </p>
-                    <p class="main__section-projects-card-stack-used">
-                        Stack Used:
-                    </p>
-                    <ul class="main__section-projects-card-stack-list">
-                        <li>React</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <div class="main__section-projects-card-buttons">
-                        <a href="#" class="btn-code">Live Site</a>
-                        <a href="#" class="btn-source">Source</a>
+                    <div class="main__section-projects-card-content">
+                        <h3 class="main__section-projects-card-header">
+                            Expense Tracker
+                        </h3>
+                        <p class="main__section-projects-card-description">
+                            Using React i was able to build a expense tracker.
+                            This was one of my first projects using react where
+                            i was able to work with files dynamically to create
+                            an application. In this project i was able to
+                            implement the unique features i've learned, that the
+                            React framework has to offer.
+                        </p>
+                        <p class="main__section-projects-card-stack-used">
+                            Stack Used:
+                        </p>
+                        <ul class="main__section-projects-card-stack-list">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="main__section-projects-card-buttons">
+                            <a href="#" class="btn-code">Live Site</a>
+                            <a href="#" class="btn-source">Source</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -95,7 +107,25 @@
                 </p>
                 <div class="main__section-technologies-skills">
                     <section class="font-end">
-                        <h3>Font-End</h3>
+                        <div class="main__section-technologies-icons">
+                            <img
+                                src="./images/SVG/tech-icons/react.svg"
+                                alt="React Icon"
+                            />
+                            <img
+                                src="./images/SVG/tech-icons/javascript.svg"
+                                alt="JavaScript Icon"
+                            />
+                            <img
+                                src="./images/SVG/tech-icons/html-five.svg"
+                                alt="HTML Icon"
+                            />
+                            <img
+                                src="./images/SVG/tech-icons/css3.svg"
+                                alt="CSS Icon"
+                            />
+                        </div>
+                        <h2>Font-End</h2>
                         <p>Experience with</p>
                         <ul>
                             <li>React</li>
@@ -105,7 +135,21 @@
                         </ul>
                     </section>
                     <section class="back-end">
-                        <h3>Back-End</h3>
+                        <div class="main__section-technologies-icons">
+                            <img
+                                src="./images/SVG/tech-icons/node-dot-js.svg"
+                                alt="Node.js Icon"
+                            />
+                            <img
+                                src="./images/SVG/tech-icons/python.svg"
+                                alt="Python"
+                            />
+                            <img
+                                src="./images/SVG/tech-icons/java.svg"
+                                alt="Java Icon"
+                            />
+                        </div>
+                        <h2>Back-End</h2>
                         <p>Experience with</p>
                         <ul>
                             <li>Node.js</li>
@@ -116,7 +160,9 @@
                 </div>
             </section>
             <section class="main__section-about-me" id="about-me">
-                <h2>About Me</h2>
+                <h2 class="main__section-about-me-header | sub-header">
+                    About Me
+                </h2>
                 <p>
                     Hi, I'm John Soto. I'm looking to get my software engineer
                     career started. I'm an NYC based student at Lehman College

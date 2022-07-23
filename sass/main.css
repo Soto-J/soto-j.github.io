@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   min-height: 100vh;
@@ -51,6 +51,84 @@ a {
     background-position: right;
   }
 }
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  80% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  80% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-bar {
   padding: 4rem;
   display: flex;
@@ -62,13 +140,23 @@ a {
   display: flex;
   gap: 3rem;
 }
-.nav-bar__links a {
+.nav-bar__links li {
+  transition: 0.3s;
+}
+.nav-bar__links li:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+}
+.nav-bar__links li:active {
+  transform: translate(2px);
+}
+.nav-bar__links a:link, .nav-bar__links a:visited {
   font-weight: 700;
   background-color: rgb(157, 171, 207);
   color: rgb(56, 71, 101);
   border-radius: 3rem;
   padding: 0.8rem 2rem;
-  transition: 0.3s;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 .nav-bar__social-icons {
   display: flex;
@@ -77,7 +165,32 @@ a {
 
 .main {
   max-width: 114rem;
-  margin: 5rem auto;
+  margin: 8rem auto;
+}
+.main__header {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+.main__introduction-box {
+  display: flex;
+  align-items: center;
+  gap: 22rem;
+}
+.main__intro {
+  -webkit-animation: moveInLeft 2s;
+          animation: moveInLeft 2s;
+  max-width: 50rem;
+}
+.main__introduction {
+  margin-top: 3rem;
+}
+.main__photo {
+  -webkit-animation: moveInRight 2s;
+          animation: moveInRight 2s;
+}
+.main__photo img {
+  width: 30rem;
+  border-radius: 50%;
 }
 .main__resume-btn {
   display: inline-block;
@@ -92,19 +205,28 @@ a {
 .main__section-projects {
   margin-top: 10rem;
 }
+.main__section-projects-header {
+  font-size: 5rem;
+}
 .main__section-projects-card {
   margin: 4rem auto;
-  max-width: 40rem;
+  max-width: 36rem;
   background-color: rgb(157, 171, 207);
   color: rgb(56, 71, 101);
-  padding: 4rem;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+  min-height: 2rem;
+}
+.main__section-projects-card-image img {
+  height: 32rem;
+  width: 100%;
+}
+.main__section-projects-card-content {
+  padding: 4rem;
 }
 .main__section-projects-card-header {
   text-align: center;
-  margin-top: 2rem;
 }
 .main__section-projects-card-description {
   margin-top: 1rem;
@@ -138,15 +260,27 @@ a {
 }
 .main__section-technologies-header {
   font-weight: 700;
+  font-size: 5rem;
 }
 .main__section-technologies-skills {
+  margin-top: 5rem;
   display: flex;
-  gap: 10rem;
-  max-width: 50rem;
-  margin: 2rem auto;
+  gap: 20rem;
+  justify-content: center;
+}
+.main__section-technologies-icons {
+  display: flex;
+  gap: 1rem;
+}
+.main__section-technologies-icons img {
+  display: inline-block;
+  width: 2.8rem;
 }
 .main__section-about-me {
   margin-top: 20rem;
+}
+.main__section-about-me-header {
+  font-size: 5rem;
 }
 
 .footer {
@@ -155,4 +289,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer .email {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

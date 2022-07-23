@@ -5,15 +5,38 @@
 
 .main {
     max-width: 114rem;
-    margin: 5rem auto;
+    margin: 8rem auto;
 
     &__section-intro {
     }
 
     &__header {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+
+    &__introduction-box {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        gap: 22rem;
+    }
+
+    &__intro {
+        animation: moveInLeft 2s;
+        max-width: 50rem;
     }
 
     &__introduction {
+        margin-top: 3rem;
+    }
+
+    &__photo {
+        animation: moveInRight 2s;
+        & img {
+            width: 30rem;
+            border-radius: 50%;
+        }
     }
 
     &__resume-btn {
@@ -31,24 +54,32 @@
         margin-top: 10rem;
 
         &-header {
+            font-size: 5rem;
         }
 
         &-card {
             margin: 4rem auto;
-            max-width: 40rem;
+            max-width: 36rem;
             background-color: $Color-grey-blue-light;
             color: $Color-grey-blue-dark;
-            padding: 4rem;
             border-radius: 1rem;
             overflow: hidden;
             box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
 
+            min-height: 2rem;
             &-image {
+                & img {
+                    height: 32rem;
+                    width: 100%;
+                }
+            }
+
+            &-content {
+                padding: 4rem;
             }
 
             &-header {
                 text-align: center;
-                margin-top: 2rem;
             }
 
             &-description {
@@ -89,21 +120,36 @@
 
         &-header {
             font-weight: 700;
+            font-size: 5rem;
         }
 
         &-description {
         }
 
         &-skills {
+            margin-top: 5rem;
             display: flex;
-            gap: 10rem;
-            max-width: 50rem;
-            margin: 2rem auto;
+            gap: 20rem;
+            justify-content: center;
+        }
+
+        &-icons {
+            display: flex;
+            gap: 1rem;
+
+            & img {
+                display: inline-block;
+                width: 2.8rem;
+            }
         }
     }
 
     &__section-about-me {
         margin-top: 20rem;
+
+        &-header {
+            font-size: 5rem;
+        }
     }
 }
 
@@ -113,4 +159,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &__header {
+    }
+
+    .email {
+        display: block;
+    }
 }
