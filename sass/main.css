@@ -20,7 +20,7 @@ body {
   width: 100%;
   line-height: 1.6;
   background: #0f1624;
-  color: rgb(157, 171, 207);
+  color: #9dabcf;
   background-size: 500%;
   -webkit-animation: bg-animation 6s infinite alternate;
           animation: bg-animation 6s infinite alternate;
@@ -129,6 +129,32 @@ a {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-bar {
   padding: 4rem;
   display: flex;
@@ -142,17 +168,19 @@ a {
 }
 .nav-bar__links li {
   transition: 0.3s;
+  -webkit-animation: moveInTop 2s;
+          animation: moveInTop 2s;
 }
 .nav-bar__links li:hover {
   transform: translateY(-1px);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
 }
 .nav-bar__links li:active {
-  transform: translate(2px);
+  transform: translateY(0.2rem);
 }
 .nav-bar__links a:link, .nav-bar__links a:visited {
   font-weight: 700;
-  background-color: rgb(157, 171, 207);
+  background-color: #9dabcf;
   color: rgb(56, 71, 101);
   border-radius: 3rem;
   padding: 0.8rem 2rem;
@@ -165,7 +193,7 @@ a {
 
 .main {
   max-width: 114rem;
-  margin: 8rem auto;
+  margin: 10rem auto;
 }
 .main__header {
   font-size: 5rem;
@@ -189,41 +217,56 @@ a {
           animation: moveInRight 2s;
 }
 .main__photo img {
-  width: 30rem;
+  width: 32rem;
   border-radius: 50%;
 }
-.main__resume-btn {
+.main__resume-btn:link, .main__resume-btn:visited {
+  font-size: 2rem;
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
-  background-color: rgb(157, 171, 207);
+  background-color: #9dabcf;
   color: rgb(56, 71, 101);
   padding: 0.8rem 2rem;
   border-radius: 3rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  -webkit-animation: moveInBottom 2s;
+          animation: moveInBottom 2s;
+  transition: 0.3s;
+}
+.main__resume-btn:link:hover, .main__resume-btn:visited:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+}
+.main__resume-btn:link:active, .main__resume-btn:visited:active {
+  transform: translateY(0.1rem);
 }
 .main__section-projects {
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 .main__section-projects-header {
   font-size: 5rem;
 }
+.main__section-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .main__section-projects-card {
   margin: 4rem auto;
   max-width: 36rem;
-  background-color: rgb(157, 171, 207);
+  background-color: #9dabcf;
   color: rgb(56, 71, 101);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
-  min-height: 2rem;
 }
 .main__section-projects-card-image img {
-  height: 32rem;
+  height: 30rem;
   width: 100%;
 }
 .main__section-projects-card-content {
-  padding: 4rem;
+  padding: 1rem 3rem 2rem 3rem;
 }
 .main__section-projects-card-header {
   text-align: center;
@@ -233,7 +276,7 @@ a {
 }
 .main__section-projects-card-stack-used {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   font-weight: 700;
 }
 .main__section-projects-card-stack-list {
@@ -244,7 +287,7 @@ a {
 .main__section-projects-card .btn-code,
 .main__section-projects-card .btn-source {
   background-color: rgb(56, 71, 101);
-  color: rgb(157, 171, 207);
+  color: #9dabcf;
   display: inline-block;
   padding: 0.8rem 2rem;
   border-radius: 0.8rem;

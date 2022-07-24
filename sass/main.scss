@@ -5,7 +5,7 @@
 
 .main {
     max-width: 114rem;
-    margin: 8rem auto;
+    margin: 10rem auto;
 
     &__section-intro {
     }
@@ -34,12 +34,14 @@
     &__photo {
         animation: moveInRight 2s;
         & img {
-            width: 30rem;
+            width: 32rem;
             border-radius: 50%;
         }
     }
 
-    &__resume-btn {
+    &__resume-btn:link,
+    &__resume-btn:visited {
+        font-size: 2rem;
         display: inline-block;
         text-decoration: none;
         font-weight: 700;
@@ -47,14 +49,31 @@
         color: $Color-grey-blue-dark;
         padding: $Padding-btn;
         border-radius: 3rem;
-        margin-top: 4rem;
+        margin-top: 8rem;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+        animation: moveInBottom 2s;
+        transition: 0.3s;
+
+        &:hover {
+            transform: translateY(-0.4rem);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+        }
+
+        &:active {
+            transform: translateY(0.1rem);
+        }
     }
 
     &__section-projects {
-        margin-top: 10rem;
+        margin-top: 20rem;
 
         &-header {
             font-size: 5rem;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         &-card {
@@ -66,16 +85,15 @@
             overflow: hidden;
             box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
 
-            min-height: 2rem;
             &-image {
                 & img {
-                    height: 32rem;
+                    height: 30rem;
                     width: 100%;
                 }
             }
 
             &-content {
-                padding: 4rem;
+                padding: 1rem 3rem 2rem 3rem;
             }
 
             &-header {
@@ -88,7 +106,7 @@
 
             &-stack-used {
                 text-align: center;
-                margin-top: 1rem;
+                margin-top: 1.4rem;
                 font-weight: 700;
             }
 
