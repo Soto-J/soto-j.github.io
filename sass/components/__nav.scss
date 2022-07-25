@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 
     &__name {
     }
@@ -17,15 +16,6 @@
             animation: moveInTop 2s;
         }
 
-        & li:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
-        }
-
-        & li:active {
-            transform: translateY(.2rem);
-        }
-
         & a:link,
         & a:visited {
             font-weight: 700;
@@ -34,6 +24,16 @@
             border-radius: 3rem;
             padding: $Padding-btn;
             box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+        }
+
+        & li:hover {
+            transform: translateY(-0.4rem);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+        }
+
+        & li:active {
+            transform: translateY(0.1rem);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
         }
     }
 

@@ -58,9 +58,10 @@
             transform: translateY(-0.4rem);
             box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
         }
-
+        
         &:active {
             transform: translateY(0.1rem);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
         }
     }
 
@@ -77,8 +78,10 @@
         }
 
         &-card {
+            text-align: center;
             margin: 4rem auto;
             max-width: 36rem;
+
             background-color: $Color-grey-blue-light;
             color: $Color-grey-blue-dark;
             border-radius: 1rem;
@@ -87,27 +90,30 @@
 
             &-image {
                 & img {
-                    height: 30rem;
+                    height: 28rem;
                     width: 100%;
                 }
             }
 
             &-content {
                 padding: 1rem 3rem 2rem 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
             }
 
             &-header {
-                text-align: center;
             }
 
             &-description {
-                margin-top: 1rem;
             }
 
             &-stack-used {
-                text-align: center;
-                margin-top: 1.4rem;
                 font-weight: 700;
+            }
+
+            .proj--2 {
+                margin-top: 5rem;
             }
 
             &-stack-list {
@@ -115,20 +121,35 @@
                 justify-content: space-between;
                 margin-top: 1rem;
             }
-            .btn-code,
-            .btn-source {
-                background-color: $Color-grey-blue-dark;
-                color: $Color-grey-blue-light;
-                display: inline-block;
-                padding: $Padding-btn;
-                border-radius: 0.8rem;
-                box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
-            }
 
             &-buttons {
                 margin-top: 2rem;
                 display: flex;
                 justify-content: space-between;
+            }
+
+            .btn-code:link,
+            .btn-code:visited,
+            .btn-source:link,
+            .btn-source:visited {
+                background-color: $Color-grey-blue-dark;
+                color: $Color-grey-blue-light;
+                display: inline-block;
+                padding: $Padding-btn;
+                border-radius: 0.8rem;
+                transition: 0.3s;
+                box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+            }
+
+            .btn-code:hover,
+            .btn-source:hover {
+                transform: translateY(-0.3rem);
+                box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+            }
+            .btn-code:active,
+            .btn-source:active {
+                transform: translateY(0.2rem);
+                box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
             }
         }
     }
