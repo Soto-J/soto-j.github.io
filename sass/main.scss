@@ -5,7 +5,7 @@
 
 .main {
     max-width: 114rem;
-    margin: 10rem auto;
+    margin: 14rem auto;
 
     &__section-intro {
     }
@@ -172,9 +172,19 @@
             justify-content: center;
         }
 
+        .card-tech {
+            background-color: $Color-grey-blue-light;
+            color: $Color-grey-blue-dark;
+            padding: 2rem;
+            border-radius: .4rem;
+            text-align: center;
+            flex-basis: 30rem;
+        }
+
         &-icons {
             display: flex;
             gap: 1rem;
+            justify-content: center;
 
             & img {
                 display: inline-block;

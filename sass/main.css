@@ -156,15 +156,20 @@ a {
   }
 }
 .nav-bar {
-  padding: 4rem;
+  margin: 4rem auto;
+  max-width: 114rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav-bar__links {
   list-style: none;
   display: flex;
   gap: 3rem;
+  position: fixed;
+  top: 0;
+  margin-top: 4.2rem;
+  z-index: 999;
 }
 .nav-bar__links li {
   transition: 0.3s;
@@ -190,11 +195,12 @@ a {
 .nav-bar__social-icons {
   display: flex;
   gap: 2rem;
+  margin-left: auto;
 }
 
 .main {
   max-width: 114rem;
-  margin: 10rem auto;
+  margin: 14rem auto;
 }
 .main__header {
   font-size: 5rem;
@@ -325,9 +331,18 @@ a {
   gap: 20rem;
   justify-content: center;
 }
+.main__section-technologies .card-tech {
+  background-color: #9dabcf;
+  color: rgb(56, 71, 101);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  flex-basis: 30rem;
+}
 .main__section-technologies-icons {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 .main__section-technologies-icons img {
   display: inline-block;
