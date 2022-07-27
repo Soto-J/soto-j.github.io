@@ -21,7 +21,7 @@ body {
   line-height: 1.6;
   background: #0f1624;
   color: #9dabcf;
-  background-size: 500%;
+  margin: 0 auto;
   -webkit-animation: bg-animation 6s infinite alternate;
           animation: bg-animation 6s infinite alternate;
 }
@@ -364,4 +364,29 @@ a {
 }
 .footer .email {
   display: block;
+}
+
+@media (max-width: 73.75em) {
+  body {
+    padding: 4rem;
+  }
+  .main__introduction-box {
+    flex-direction: column-reverse;
+    gap: 2.2rem;
+    text-align: center;
+  }
+  .main__section-projects {
+    margin-top: 10rem;
+  }
+  .main__section-projects-header {
+    text-align: center;
+  }
+  .main__section-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .main__section-technologies {
+    margin-top: 5rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

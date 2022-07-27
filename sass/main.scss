@@ -216,3 +216,45 @@
         display: block;
     }
 }
+
+
+@media (max-width: 73.75em) {
+    html {
+        // font-size: 58%;
+    }
+
+    body {
+        padding: 4rem;
+    }
+
+    .main {
+        &__introduction-box {
+            flex-direction: column-reverse;
+            gap: 2.2rem;
+            text-align: center;
+        }
+
+        &__resume-btn {
+            
+            
+        }
+
+        &__section-projects {
+            margin-top: 10rem;
+            &-header {
+                text-align: center;
+            }
+
+            &-grid {
+                grid-template-columns: 1fr;
+                gap: 0rem;
+                // max-width: 35rem;
+            }
+        }
+
+        &__section-technologies {
+            margin-top: 5rem;
+            text-align: center;
+        }
+    }
+}
