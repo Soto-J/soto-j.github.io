@@ -1,21 +1,28 @@
-// COLORS
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;600;700;900&display=swap");
+
+$Color-navy-blue: #0c192c;
+$Color-baby-blue: #4fc3dc;
+$Color-transparent-baby-blue: #4fc3dc44;
+$Color-pink: #ff2d75;
+$Color-transparent-pink: #ff2d7544;
+$Color-white: #fff;
+
+$Color-green: #308f89;
+$Color-mint-green: #d9f3f0;
+$Color-transparent-mint-green: #d9f3f044;
+
+
+
+// TEMPS
 $Color-bg-gradient: no-repeat linear-gradient(to right bottom, #0f1624, #3a4051);
 $Color-bg-navy: #0f1624;
 
 $Color-grey-blue-light: #9dabcf;
 $Color-grey-blue-dark: rgb(56, 71, 101);
 
-$Color-white: #ffffff;
-
-// FONTS
-$Font-Lato: "Lato", sans-serif;
-
-// PADDING
-$Padding-btn: 0.8rem 2rem;
-
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -27,19 +34,15 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: $Font-Lato;
-    font-weight: 400;
+    font-family: "League Spartan", sans-serif;
     min-height: 100vh;
-    width: 100%;
+    font-size: 1.6rem;
     line-height: 1.6;
-    background: $Color-bg-navy;
-    color: $Color-grey-blue-light;
-    margin: 0 auto;
-    animation: bg-animation 6s infinite alternate;
+    background-color: $Color-navy-blue;
+    color: $Color-mint-green;
 }
 
-li {
+ul {
     list-style: none;
 }
 

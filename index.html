@@ -6,218 +6,241 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./sass/main.css" />
         <script src="./js/main.js" defer></script>
-        <title>John Soto Portfolio</title>
+        <title>John Soto</title>
     </head>
     <body>
-        <nav class="nav-bar">
-            <ul class="nav-bar__links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#about-me">About Me</a></li>
-            </ul>
-
-            <div class="nav-bar__social-icons">
-                <a href="https://github.com/Soto-J" target="_blank">
-                    <img
-                        src="./images/SVG/social-icons/icon-github.svg"
-                        alt="Github Icon"
-                    />
+        <header class="nav-bar">
+            <nav class="nav-bar__navigation">
+                <a href="#" class="nav-bar__navigation-toggle-btn">
+                    <span class="nav-bar__navigation-toggle-btn-bars"></span>
+                    <span class="nav-bar__navigation-toggle-btn-bars"></span>
+                    <span class="nav-bar__navigation-toggle-btn-bars"></span>
                 </a>
-                <a
-                    href="https://www.linkedin.com/in/john-soto-31994a151/"
-                    target="_blank"
+                <ul
+                    class="nav-bar__navigation-links | nav-bar__navigation-links-active"
                 >
-                    <img
-                        src="./images/SVG/social-icons/icon-linkedin.svg"
-                        alt="Linkedin Icon"
-                    />
-                </a>
-            </div>
-        </nav>
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="nav-bar__social-icons">
+            <a href="mailto:soto.ja415@gmail.com">
+                <svg class="nav-bar__social-icons-email">
+                    <use xlink:href="images/sprite.svg#icon-envelop"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/Soto-J" target="_blank">
+                <svg class="nav-bar__social-icons-github">
+                    <use xlink:href="images/sprite.svg#icon-github"></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/john-soto-31994a151/"
+                target="_blank"
+            >
+                <svg class="nav-bar__social-icons-linkedin">
+                    <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+        </aside>
+
         <main class="main">
             <section class="main__section-intro">
-                <div class="main__introduction-box">
-                    <div class="main__intro">
-                        <h1 class="main__header">
-                            Welcome To My Personal Portfolio!
-                        </h1>
-                        <p class="main__introduction">
-                            Hello, my name is John Soto and I'm an aspiring
-                            Software Developer looking to take my development
-                            skills to the next level by building amazing
-                            applications and websites.
-                        </p>
-                    </div>
-                    <picture class="main__photo">
-                        <img src="./images/john-soto.jpg" alt="John Soto" />
-                    </picture>
+                <div class="main__section-intro-content">
+                    <h1 class="main__section-intro-content-header">
+                        Welcome To My Personal Portfolio!
+                    </h1>
+                    <p class="main__section-intro-content-description">
+                        Hello, my name is John Soto and I'm an aspiring Software
+                        Developer looking to take my development skills to the
+                        next level by building amazing applications and
+                        websites.
+                    </p>
                 </div>
-                <a
-                    href="./images/Resume-2022.pdf"
-                    class="main__resume-btn"
-                    download="John Soto Resume"
-                    >Resume</a
-                >
+                <picture class="main__section-intro-image">
+                    <img src="./images/john-soto.jpg" alt="John Soto" />
+                </picture>
+                <div>
+                    <a
+                        href="./images/Resume-2022.pdf"
+                        download="John Soto"
+                        class="main__section-intro-resume-btn"
+                        >Resume</a
+                    >
+                </div>
             </section>
 
             <section class="main__section-projects" id="projects">
                 <h2 class="main__section-projects-header">
                     Projects & Challenges
                 </h2>
-                <div class="main__section-projects-grid">
-                    <div class="main__section-projects-card">
-                        <picture class="main__section-projects-card-image">
-                            <img src="./images/projects/Expense.PNG" alt="" />
-                        </picture>
-                        <div class="main__section-projects-card-content">
-                            <h3 class="main__section-projects-card-header">
-                                Expense Tracker
-                            </h3>
-                            <p class="main__section-projects-card-description">
-                                Using React I was able to build a expense
-                                tracker. This was one of my first projects using
-                                react where I was able to work with files
-                                dynamically to create an application. In this
-                                project I was able to implement the unique
-                                features I've learned, that the React framework
-                                has to offer.
-                            </p>
-                            <p class="main__section-projects-card-stack-used">
-                                Stack Used:
-                            </p>
-                            <ul class="main__section-projects-card-stack-list">
-                                <li>React</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <div class="main__section-projects-card-buttons">
-                                <a
-                                    href="https://soto-j.github.io/expense-tracker/"
-                                    target="_blank"
-                                    class="btn-code"
-                                    >Live Site</a
-                                >
-                                <a
-                                    href="https://github.com/Soto-J/expense-tracker"
-                                    target="_blank"
-                                    class="btn-source"
-                                    >Source</a
-                                >
-                            </div>
+                <div class="main__section-projects-card-1">
+                    <picture class="main__section-projects-card-1-image">
+                        <img
+                            src="./images/projects/expense-tracker.png"
+                            alt="Expense Tracker"
+                        />
+                    </picture>
+                    <div class="main__section-projects-card-1-content">
+                        <h3 class="main__section-projects-card-1-header">
+                            Expense Tracker
+                        </h3>
+                        <p class="main__section-projects-card-1-description">
+                            Using React I was able to build a expense tracker.
+                            This was one of my first projects using react where
+                            I was able to work with files dynamically to create
+                            an application.
+                        </p>
+                        <h3 class="main__section-projects-card-1-sub-header">
+                            Stack Used:
+                        </h3>
+                        <div class="main__section-projects-card-1-btns">
+                            <a
+                                href="https://soto-j.github.io/expense-tracker/"
+                                target="_blank"
+                                class="main__section-projects-card-btns-live-site"
+                                >Live Site</a
+                            >
+                            <a
+                                href=""
+                                target="_blank"
+                                class="main__section-projects-card-btns-source"
+                                >Source</a
+                            >
                         </div>
                     </div>
-                    <div class="main__section-projects-card">
-                        <picture class="main__section-projects-card-image">
-                            <img
-                                src="./images/projects/front-end-mentor-challenges.png"
-                                alt=""
-                            />
-                        </picture>
-                        <div class="main__section-projects-card-content">
-                            <h3 class="main__section-projects-card-header">
-                                Front-End Mentor Challenges
-                            </h3>
-                            <p class="main__section-projects-card-description">
-                                I took on Front-End Mentor challenges to sharpen
-                                my skills in front-end development. I was able
-                                to utilize javascript, HTML, and CSS/SASS to
-                                build real world mock-up designs.
-                            </p>
-                            <p
-                                class="main__section-projects-card-stack-used proj--2"
+                </div>
+
+                <div class="main__section-projects-card-2">
+                    <picture class="main__section-projects-card-2-image">
+                        <img
+                            src="./images/projects/front-end-mentor-challenges.png"
+                            alt="Front-End Challenges"
+                        />
+                    </picture>
+                    <div class="main__section-projects-card-2-content">
+                        <h3 class="main__section-projects-card-2-header">
+                            Front-End Mentor Challenges
+                        </h3>
+                        <p class="main__section-projects-card-2-description">
+                            I took on Front-End Mentor challenges to sharpen my
+                            skills in front-end development. I was able to
+                            utilize javascript, HTML, and CSS/SASS to build real
+                            world mock-up designs.
+                        </p>
+                        <h3 class="main__section-projects-card-2-sub-header">
+                            Stack Used:
+                        </h3>
+                        <div class="main__section-projects-card-2-btns">
+                            <a
+                                href="https://soto-j.github.io/front-end-mentor-challenges/"
+                                target="_blank"
+                                class="main__section-projects-card-btns-live-site"
+                                >Live Site</a
                             >
-                                Stack Used:
-                            </p>
-                            <ul class="main__section-projects-card-stack-list">
-                                <li>HTML</li>
-                                <li>CSS/SASS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <div class="main__section-projects-card-buttons">
-                                <a
-                                    href="https://soto-j.github.io/front-end-mentor-challenges/"
-                                    target="_blank"
-                                    class="btn-code"
-                                    >Live Site</a
-                                >
-                                <a
-                                    href="https://github.com/Soto-J/front-end-mentor-challenges"
-                                    target="_blank"
-                                    class="btn-source"
-                                    >Source</a
-                                >
-                            </div>
+                            <a
+                                href=""
+                                target="_blank"
+                                class="main__section-projects-card-btns-source"
+                                >Source</a
+                            >
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="main__section-technologies" id="technologies">
-                <h2 class="main__section-technologies-header">Technologies</h2>
-                <h3 class="main__section-technologies-description">
-                    I've worked with a range of technologies while learning to
-                    program. Here are some of the languages/frameworks i've
-                    used.
-                </h3>
-                <div class="main__section-technologies-skills">
-                    <section class="font-end | card-tech">
-                        <div class="main__section-technologies-icons">
-                            <img
-                                src="./images/SVG/tech-icons/react.svg"
-                                alt="React Icon"
-                            />
-                            <img
-                                src="./images/SVG/tech-icons/javascript.svg"
-                                alt="JavaScript Icon"
-                            />
-                            <img
-                                src="./images/SVG/tech-icons/html-five.svg"
-                                alt="HTML Icon"
-                            />
-                            <img
-                                src="./images/SVG/tech-icons/css3.svg"
-                                alt="CSS Icon"
-                            />
-                        </div>
-                        <h2>Font-End</h2>
-                        <p>Experience with</p>
-                        <ul>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS/SASS</li>
-                        </ul>
-                    </section>
-                    <section class="back-end | card-tech">
-                        <div class="main__section-technologies-icons">
-                            <img
-                                src="./images/SVG/tech-icons/node-dot-js.svg"
-                                alt="Node.js Icon"
-                            />
-                            <img
-                                src="./images/SVG/tech-icons/python.svg"
-                                alt="Python"
-                            />
-                            <img
-                                src="./images/SVG/tech-icons/java.svg"
-                                alt="Java Icon"
-                            />
-                        </div>
-                        <h2>Back-End</h2>
-                        <p>Experience with</p>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                        </ul>
-                    </section>
+                <header class="main__section-technologies-header-box">
+                    <h2>Technologies</h2>
+                    <p>
+                        I've worked with a range of technologies while learning
+                        to program. Here are some of the languages/frameworks
+                        i've used.
+                    </p>
+                </header>
+                <div class="main__section-technologies-card-1">
+                    <div class="main__section-technologies-card-1-logos">
+                        <svg
+                            class="main__section-technologies-card-1-logos-react"
+                        >
+                            <use
+                                xlink:href="images/sprite.svg#icon-react"
+                            ></use>
+                        </svg>
+                        <svg
+                            class="main__section-technologies-card-1-logos-javascript"
+                        >
+                            <use
+                                xlink:href="images/sprite.svg#icon-javascript"
+                            ></use>
+                        </svg>
+                        <svg
+                            class="main__section-technologies-card-1-logos-html"
+                        >
+                            <use
+                                xlink:href="images/sprite.svg#icon-html-five"
+                            ></use>
+                        </svg>
+                        <svg
+                            class="main__section-technologies-card-1-logos-css"
+                        >
+                            <use xlink:href="images/sprite.svg#icon-css3"></use>
+                        </svg>
+                        <svg
+                            class="main__section-technologies-card-1-logos-sass"
+                        >
+                            <use xlink:href="images/sprite.svg#icon-sass"></use>
+                        </svg>
+                    </div>
+                    <h2 class="main__section-technologies-card-1-header">
+                        Font-End
+                    </h2>
+                    <h3 class="main__section-technologies-card-sub-header">
+                        Experience using:
+                    </h3>
+                    <ul class="main__section-technologies-card-list">
+                        <li>React</li>
+                        <li>javascript</li>
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                    </ul>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="main__section-technologies-card-2">
+                    <div class="main__section-technologies-card-2-logos">
+                        <svg class="nav-bar__social-icons-email">
+                            <use
+                                xlink:href="images/sprite.svg#icon-node-dot-js"
+                            ></use>
+                        </svg>
+                        <svg class="nav-bar__social-icons-email">
+                            <use
+                                xlink:href="images/sprite.svg#icon-python"
+                            ></use>
+                        </svg>
+                        <svg class="nav-bar__social-icons-email">
+                            <use xlink:href="images/sprite.svg#icon-java"></use>
+                        </svg>
+                    </div>
+                    <h2>Back-End</h2>
+                    <h3 class="main__section-technologies-card-sub-header">
+                        Experience using:
+                    </h3>
+                    <ul class="main__section-technologies-list">
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
                 </div>
             </section>
+
             <section class="main__section-about-me" id="about-me">
-                <h2 class="main__section-about-me-header | sub-header">
-                    About Me
-                </h2>
-                <p>
+                <h2 class="main__section-about-me-header">About Me</h2>
+                <p class="main__section-about-me-description">
                     Hi, I'm John Soto. I'm looking to get my software engineer
                     career started. I'm an NYC based student at Lehman College
                     and expecting to graduate with my B.S. in Computer Science
@@ -229,31 +252,21 @@
                 </p>
             </section>
         </main>
-        <footer class="footer">
-            <div>
-                <h5 class="footer__header">EMAIL</h5>
-                <a href="#" class="email">Soto.ja415@gmail.com</a>
-                <q>Innovating one project at a time</q>
+
+        <!-- <footer class="footer">
+            <div class="footer__header">EMAIL</div>
+            <a href="">soto.ja415@gmail.com</a>
+            <h6 class="footer__sub-header">
+                "Innovating one project at a time"
+            </h6>
+            <div class="footer__social-icons">
+                <svg class="footer__social-icons-github">
+                    <use xlink:href="images/sprite.svg#icon-github"></use>
+                </svg>
+                <svg class="footer__social-icons-github">
+                    <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+                </svg>
             </div>
-            <div>
-                <div class="nav-bar__social-icons">
-                    <a href="https://github.com/Soto-J" target="_blank">
-                        <img
-                            src="./images/SVG/social-icons/icon-github.svg"
-                            alt="Github Icon"
-                        />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/john-soto-31994a151/"
-                        target="_blank"
-                    >
-                        <img
-                            src="./images/SVG/social-icons/icon-linkedin.svg"
-                            alt="Linkedin Icon"
-                        />
-                    </a>
-                </div>
-            </div>
-        </footer>
+        </footer> -->
     </body>
 </html>

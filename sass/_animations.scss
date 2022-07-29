@@ -1,0 +1,113 @@
+@import "./base";
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    80% {
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    80% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+// @keyframes animate {
+//     0% {
+//         transform: translateY(100vh) scale(0);
+//     }
+
+//     100% {
+//         transform: translateY(-10vh) scale(1);
+//     }
+// }
+
+// .bg {
+//   display: none;
+//     width: 100%;
+//     min-height: 100vh;
+//     z-index: -1;
+//     position: absolute;
+
+//     &__bubbles {
+//         position: relative;
+//         display: flex;
+
+//         & span {
+//             position: relative;
+//             width: 3rem;
+//             height: 3rem;
+//             background: $Color-baby-blue;
+//             margin: 0 0.4rem;
+//             border-radius: 50%;
+//             box-shadow: 0 0 0 1rem $Color-transparent-baby-blue,
+//                 0 0 5rem $Color-baby-blue, 0 0 10rem $Color-baby-blue;
+//             animation: animate 15s linear infinite;
+//             animation-duration: calc(120s / var(--i));
+
+//             &:nth-child(even) {
+//                 background: $Color-pink;
+//                 box-shadow: 0 0 0 1rem $Color-transparent-pink,
+//                     0 0 5rem $Color-pink, 0 0 10rem $Color-pink;
+//             }
+//         }
+//     }
+// }
