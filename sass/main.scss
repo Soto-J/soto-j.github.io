@@ -298,6 +298,58 @@
     }
 
     .main {
-        // margin-top: 70rem;
+        max-width: 50rem;
+        &__section-intro {
+            text-align: center;
+            grid-template-columns: 1fr;
+
+            &-content {
+                &-header {
+                    font-size: 3.4rem;
+                }
+            }
+
+            &-image {
+                grid-row: 1;
+            }
+        }
+
+        &__section-projects {
+            margin-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-header {
+                text-align: center;
+                font-size: 3.4rem;
+            }
+
+            &-card-2 {
+                grid-column: -3;
+            }
+        }
+
+        &__section-technologies {
+            margin-top: 10rem;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+
+            &-card-2 {
+                grid-column: -3;
+            }
+
+            &-header-box {
+                & h2 {
+                    font-size: 3.4rem;
+                }
+            }
+        }
+
+        &__section-about-me {
+            text-align: center;
+            margin-top: 10rem;
+        }
     }
 }
