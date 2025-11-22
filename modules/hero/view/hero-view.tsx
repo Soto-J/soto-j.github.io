@@ -34,7 +34,7 @@ export const HeroView = () => {
           <img
             src="/images/john-soto-img.png"
             alt="John Soto"
-            className="h-14 w-14 shadow-md"
+            className="h-15 w-15 shadow-md"
           />
         </div>
 
@@ -84,9 +84,11 @@ export const HeroView = () => {
 
       {/* Action Buttons */}
       <div className="flex gap-4 flex-wrap justify-center md:justify-start">
-        <Button size="lg" variant="outline">
-          <ImFileText2 className="mr-2 h-4 w-4" />
-          Resume
+        <Button size="lg" variant="outline" asChild>
+          <a href="/api/resume" target="_blank">
+            <ImFileText2 className="mr-2 h-4 w-4" />
+            Resume
+          </a>
         </Button>
         <Button size="icon" variant="outline" asChild>
           <a

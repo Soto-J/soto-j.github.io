@@ -3,8 +3,7 @@
 import { AnimatePresence, motion, Transition } from "framer-motion";
 
 const transition: Transition = {
-  // duration: 0.8,
-  duration: 10,
+  duration: 0.8,
   delay: 0.5,
   ease: [0, 0.71, 0.2, 1.01],
 };

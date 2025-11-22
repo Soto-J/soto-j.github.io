@@ -49,7 +49,6 @@ export default function ProjectssView() {
   return (
     <div className="space-y-8">
       {/* Section Header */}
- 
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -169,11 +168,6 @@ export default function ProjectssView() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Closing bracket */}
-      <div className="font-mono text-sm md:text-base">
-        <span className="text-muted-foreground">];</span>
       </div>
     </div>
   );
